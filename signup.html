@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sign Up</title>
+    <meta name="description" content="Create an account to enjoy seamless shopping on NEXA.COM.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="header-container">
+                <div class="brand">
+                    <a href="/">
+                        <img src="images/net.png" alt="Urban Market Logo" class="logo">
+                        <h1><b>NEXA.COM</b></h1>
+                    </a>
+                </div>
+                <div class="search-bar-container">
+                    <form action="/search" method="get" class="search-bar" role="search">
+                        <div class="search-bar-inner">
+                            <select name="category" aria-label="Select a category">
+                                <option value="all">All Categories</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="home">Home & Kitchen</option>
+                                <option value="sports">Sports</option>
+                                <option value="beauty">Beauty Products</option>
+                                <option value="furniture">Furniture</option>
+                            </select>
+                            <input type="text" name="q" placeholder="Search for products" aria-label="Search Products">
+                            <button type="submit"><b>Search</b></button>
+                        </div>
+                    </form>
+                </div>
+                <nav class="header-links" aria-label="Main Navigation">
+                    <a href="signup.html"><button><i class="fas fa-user-plus"></i> Sign Up</button></a>
+                    <a href="mycart.html"><button><i class="fas fa-shopping-cart"></i> My Cart</button></a>
+                    <a href="myaccount.html"><button><i class="fas fa-user"></i> Account</button></a>
+                    <a href="livechat.html"><button><i class="fas fa-message"></i> Live Chat</button></a>
+                    <a href="index.html"><button><i class="fas fa-home"></i> Homepage</button></a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-container">
+            <div class="signup-container">
+                <h1 class="signup-title">Create Your Account</h1>
+                <form action="/signup" method="post" class="signup-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required placeholder="Choose a username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+                    </div>
+                    <div class="form-group terms-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="terms of service.html">Terms of Service</a> and <a href="privacypolicy.html">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="signup-button">Sign Up</button>
+                    
+                </form>
+                <div class="additional-options">
+                    <p>Already have an account? <a href="signin.html">Sign in here</a></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3><b>About Us</b></h3>
+                        <a href="our story.html">Our Story</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="FAQS.html">FAQs</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3><b>Legal</b></h3>
+                        <a href="terms of service.html">Terms of Service</a>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="cookie policy.html">Cookie Policy</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3><b>Social Media</b></h3>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;NEXA.com All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        /* Additional CSS for Enhanced Sign Up Styling */
+        .signup-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            max-width: 350px; /* Adjust width to modern standards */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #f08040; /* Change border color on focus */
+            outline: none;
+        }
+
+        .terms-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .terms-group label {
+            margin-left: 8px; /* Space between checkbox and label */
+            font-size: 0.85em;
+        }
+
+        .signup-button {
+            padding: 15px;
+            background: #203040;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .signup-button:hover {
+            background: #f08040;
+        }
+
+        .additional-options {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .additional-options a {
+            color: #f08040;
+            text-decoration: none;
+        }
+
+        .additional-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>FAQs</title>
+    <meta name="description" content="View and manage items in your shopping cart. Proceed to checkout with your selected products.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="header-container">
+                <div class="brand">
+                    <a href="/">
+                        <img src="images/net.png" alt="Urban Market Logo" class="logo">
+                        <h1><b>NEXA.COM</b></h1>
+                    </a>
+                </div>
+                <div class="search-bar-container">
+                    <form action="/search" method="get" class="search-bar" role="search">
+                        <div class="search-bar-inner">
+                            <select name="category" aria-label="Select a category">
+                                <option value="all">All Categories</option>
+                                <option value="electronics"><b>Electronics</b></option>
+                                <option value="clothing"><b>Clothing</b></option>
+                                <option value="home"><b>Home & Kitchen</b></option>
+                                <option value="sports"><b>Sports</b></option>
+                                <option value="beauty"><b>Beauty Products</b></option>
+                                <option value="furniture"><b>Furniture</b></option>
+                            </select>
+                            <input type="text" name="q" placeholder="Search for products" aria-label="Search Products">
+                            <button type="submit"><b>Search</b></button>
+                        </div>
+                    </form>
+                </div>
+                <nav class="header-links" aria-label="Main Navigation">
+                    <a href="signup.html"><button><i class="fas fa-user-plus"></i> Sign Up</button></a>
+                    <a href="mycart.html"><button><i class="fas fa-shopping-cart"></i> <b>MyCart</b></button></a>
+                    <a href="myaccount.html"><button><i class="fas fa-user"></i> <b>Account</b></button></a>
+                    <a href="livechat.html"><button><i class="fas fa-message"></i> <b>LiveChat</b></button></a>
+                    <a href="index.html"><button><i class="fas fa-home"></i> <b>Homepage</b></button></a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-container">
+            <section class="faqs">
+                <h2><b>Frequently Asked Questions</b></h2>
+        
+                <p>If you have questions, we’re here to help! Browse through our FAQs below to find the answers you need.</p>
+        
+                <div class="faq-item">
+                    <h3><b>1. What is NEXA.COM?</b></h3>
+                    <p>NEXA.COM is your one-stop online marketplace, offering a wide variety of products ranging from electronics to clothing and home goods.</p>
+                </div>
+        
+                <div class="faq-item">
+                    <h3><b>2. How do I place an order?</b></h3>
+                    <p>To place an order, simply browse our catalog, select the items you want, and add them to your cart. Once you're ready, proceed to checkout and follow the prompts to complete your purchase.</p>
+                </div>
+        
+                <div class="faq-item">
+                    <h3><b>3. Can I modify or cancel my order?</b></h3>
+                    <p>You can modify or cancel your order within 1 hour of placing it. After that, please contact our customer service for further assistance.</p>
+                </div>
+        
+                <div class="faq-item">
+                    <h3><b>4. What should I do if I receive a damaged item?</b></h3>
+                    <p>If you receive a damaged item, please contact our support team within 48 hours of delivery. We will arrange for a return and replacement.</p>
+                </div>
+        
+                <div class="faq-item">
+                    <h3><b>5. How do I return an item?</b></h3>
+                    <p>To return an item, please visit our Returns page and follow the instructions provided. You will need your order number and the email used to make the purchase.</p>
+                </div>
+        
+                <div class="faq-item">
+                    <h3><b>6. How can I contact customer support?</b></h3>
+                    <p>You can reach our customer support team via email at <a href="mailto:support@nexa.com">support@nexa.com</a> or call us at <a href="tel:+1234567890">1-234-567-890</a>. We also offer live chat support on our website during business hours.</p>
+                </div>
+        
+                <h3><b>Need Further Assistance?</b></h3>
+                <p>If your question wasn't answered here, feel free to <a href="contactus.html">contact us</a> for more help.</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3><b><i>About Us</i></b></h3>
+                        <a href="our story.html"><b>Our Story</b></a>
+                        <a href="careers.html"><b>Careers</b></a>
+                        <a href="contactus.html"><b>contact us</b></a>
+                        <a href="FAQS.html"><b>FAQS</b></a>
+
+                        
+                    </div>
+                    <div class="footer-section">
+                        <h3><b><i>Legal</i></b></h3>
+                        <a href="terms of service.html"><b>Terms of Service</b></a>
+                        <a href="privacypolicy.html"><b>Privacy Policy</b></a>
+                        <a href="cookie policy.html"><b>Cookie Policy</b></a>
+                        
+                    </div>
+                    <div class="footer-section">
+                        <h3><b><i>social Media</i></b></h3>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i> <b>Facebook</b>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i> <b>Instagram</b>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i> <b>Twitter</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p> <b>&copy;NEXA.com All rights reserved.</b></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

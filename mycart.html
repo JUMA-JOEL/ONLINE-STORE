@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Cart</title>
+    <meta name="description" content="View and manage items in your shopping cart. Proceed to checkout with your selected products.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="header-container">
+                <div class="brand">
+                    <a href="/">
+                        <img src="images/net.png" alt="Urban Market Logo" class="logo">
+                        <h1><b>NEXA.COM</b></h1>
+                    </a>
+                </div>
+                <div class="search-bar-container">
+                    <form action="/search" method="get" class="search-bar" role="search">
+                        <div class="search-bar-inner">
+                            <select name="category" aria-label="Select a category">
+                                <option value="all">All Categories</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="home">Home & Kitchen</option>
+                                <option value="sports">Sports</option>
+                                <option value="beauty">Beauty Products</option>
+                                <option value="furniture">Furniture</option>
+                            </select>
+                            <input type="text" name="q" placeholder="Search for products" aria-label="Search Products">
+                            <button type="submit"><b>Search</b></button>
+                        </div>
+                    </form>
+                </div>
+                <nav class="header-links" aria-label="Main Navigation">
+                    <a href="signup.html"><button><i class="fas fa-user-plus"></i> Sign Up</button></a>
+                    <a href="mycart.html"><button><i class="fas fa-shopping-cart"></i> My Cart</button></a>
+                    <a href="myaccount.html"><button><i class="fas fa-user"></i> Account</button></a>
+                    <a href="livechat.html"><button><i class="fas fa-message"></i> Live Chat</button></a>
+                    <a href="index.html"><button><i class="fas fa-home"></i> Homepage</button></a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-container">
+            <div class="cart">
+                <h1 class="cart-title">Your Shopping Cart</h1>
+                <div class="cart-list">
+                    <ul class="cart-list-container">
+                        <li class="cart-item">
+                            <div class="item-details">
+                                <img src="images/product1.jpg" alt="Product 1" class="item-image">
+                                <div class="item-info">
+                                    <h2>Product Name 1</h2>
+                                    <p class="item-category">Category: Electronics</p>
+                                    <p class="item-price">$50.00</p>
+                                </div>
+                            </div>
+                            <div class="item-quantity">
+                                <label for="quantity1">Qty:</label>
+                                <input type="number" id="quantity1" name="quantity" min="1" value="1">
+                            </div>
+                            <div class="item-total">
+                                <p>Total: <span class="total-price">$50.00</span></p>
+                            </div>
+                            <button class="remove-item" title="Remove this item"><i class="fas fa-trash"></i></button>
+                        </li>
+                        <li class="cart-item">
+                            <div class="item-details">
+                                <img src="images/product2.jpg" alt="Product 2" class="item-image">
+                                <div class="item-info">
+                                    <h2>Product Name 2</h2>
+                                    <p class="item-category">Category: Clothing</p>
+                                    <p class="item-price">$30.00</p>
+                                </div>
+                            </div>
+                            <div class="item-quantity">
+                                <label for="quantity2">Qty:</label>
+                                <input type="number" id="quantity2" name="quantity" min="1" value="1">
+                            </div>
+                            <div class="item-total">
+                                <p>Total: <span class="total-price">$30.00</span></p>
+                            </div>
+                            <button class="remove-item" title="Remove this item"><i class="fas fa-trash"></i></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cart-summary">
+                    <h2>Cart Summary</h2>
+                    <div class="summary-details">
+                        <p>Subtotal: <span class="subtotal">$80.00</span></p>
+                        <p>Shipping: <span class="shipping">$5.00</span></p>
+                        <p><strong>Total: <span class="total">$85.00</span></strong></p>
+                    </div>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3><b>About Us</b></h3>
+                        <a href="our story.html">Our Story</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="FAQS.html">FAQs</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3><b>Legal</b></h3>
+                        <a href="terms of service.html">Terms of Service</a>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                        <a href="cookie policy.html">Cookie Policy</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3><b>Social Media</b></h3>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy;NEXA.com All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        /* Additional CSS for Enhanced Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .cart {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .cart-list-container {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .item-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .item-image {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .item-info {
+            text-align: left;
+        }
+
+        .item-category {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .item-quantity,
+        .item-total {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .item-quantity input {
+            width: 50px;
+            text-align: center;
+        }
+
+        .remove-item {
+            background: transparent;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        .cart-summary {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-details {
+            margin-bottom: 15px;
+        }
+
+        .checkout-button {
+            width: 100%;
+            padding: 15px;
+            background: #203040;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .checkout-button:hover {
+            background:#f08040 ;
+        }
+
+        footer {
+            background: #203040;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+
+</html>
