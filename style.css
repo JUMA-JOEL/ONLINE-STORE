@@ -88,7 +88,7 @@ header {
 
 .search-bar button {
     padding: 10px 15px;
-    background-color: #FF9900; /* Amazon orange color */
+    background-color: lightgreen; /* Amazon orange color */
     color: white;
     border: none;
     cursor: pointer;
