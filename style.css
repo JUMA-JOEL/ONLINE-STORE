@@ -36,7 +36,7 @@ a:hover {
 }
 
 header {
-    background-color: #203040; /* Amazon-like header background */
+    background-color:#091828; 
     padding: 10px 20px;
     color: white;
 }
@@ -54,7 +54,7 @@ header {
 
 .header-links button {
     padding: 10px 15px;
-    background-color: #37475A; /* Darker button color */
+    background-color:#FF9900 ; /* Darker button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@ header {
 }
 
 .header-links button:hover {
-    background-color: #FF9900; /* Change color on hover */
+    background-color:lightgreen; /* Change color on hover */
 }
 
 .brand h1 {
@@ -88,7 +88,7 @@ header {
 
 .search-bar button {
     padding: 10px 15px;
-    background-color: lightgreen; /* Amazon orange color */
+    background-color:#FF9900 ; 
     color: white;
     border: none;
     cursor: pointer;
@@ -107,7 +107,7 @@ header {
 }
 
 .search-bar button:hover {
-    background-color: #f08040; /* Hover color */
+    background-color: lightgreen; /* Hover color */
 }
 
 
@@ -160,7 +160,7 @@ header {
 }
 
 footer {
-    background-color: #203040; /* Amazon-like footer background */
+    background-color:#091828 ; /* Amazon-like footer background */
     color: white;
     padding: 20px 0; /* Padding to give some space */
     text-align: center;
@@ -266,7 +266,7 @@ footer {
 
 .add-to-cart {
     padding: 10px 15px;
-    background-color: #203040; /* Button color */
+    background-color:#091828; /* Button color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -275,7 +275,7 @@ footer {
 }
 
 .add-to-cart:hover {
-    background-color: #f08040; /* Hover color */
+    background-color: lightgreen; /* Hover color */
 }
 
 #main-container {
